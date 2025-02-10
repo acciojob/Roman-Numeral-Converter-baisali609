@@ -17,9 +17,10 @@ function convertToRoman(num) {
 
   //your code here
 	let roman ="";
-	for(let i=0;i<=arr.length,i++){
-		if(num >= obj[i][1]){
-			 roman += obj[i][0];
+	for(let i=0;i<arr.length;i++){
+		while(num >= arr[i][1]){
+			 roman += arr[i][0];
+			num -= arr[i][1];
 		}
 	}
 	return roman;
